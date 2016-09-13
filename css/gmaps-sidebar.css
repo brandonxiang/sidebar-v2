@@ -27,7 +27,7 @@
   @media (min-width: 768px) {
     .sidebar-left {
       left: 15px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .sidebar-left {
       bottom: 0;
       height: 40px; } }
@@ -43,14 +43,14 @@
   bottom: 0;
   height: 100%;
   background-color: #fff; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .sidebar-tabs {
       height: 40px;
       top: initial;
       position: absolute; } }
   .sidebar-left .sidebar-tabs {
     left: 0; }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       .sidebar-left .sidebar-tabs {
         width: 100%; } }
   .sidebar-right .sidebar-tabs {
@@ -61,7 +61,7 @@
     width: 40px;
     margin: 0;
     padding: 0; }
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       .sidebar-tabs,
       .sidebar-tabs > ul {
         list-style: none;
@@ -108,7 +108,7 @@
           top: initial; } }
   .sidebar-tabs > ul + ul {
     bottom: 0; }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       .sidebar-tabs > ul + ul {
         float: right;
         position: relative; } }

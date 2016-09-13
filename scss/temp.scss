@@ -48,7 +48,7 @@ $move-map-in-xs: true !default;
     @media(min-width: $threshold-sm) {
         left: $sidebar-margins;
     }
-    @media(max-width:$threshold-sm - 1px) {
+    @media(max-width:$threshold-sm) {
         bottom: 0;
         height: 40px;
     }
@@ -65,16 +65,13 @@ $move-map-in-xs: true !default;
     top: 0;
     bottom: 0;
     height: 100%;
-    @media(max-width: $threshold-sm - 1px) {
+    @media(max-width: $threshold-sm) {
         height: 40px;
         top: initial;
         position: absolute;
     }
     .sidebar-left & {
         left: 0;
-        @media(max-width: $threshold-sm - 1px) {
-            width: 100%;
-        }
     }
     .sidebar-right & {
         right: 0;
@@ -86,9 +83,8 @@ $move-map-in-xs: true !default;
         width: $tab-size;
         margin: 0;
         padding: 0;
-        @media(max-width: $threshold-sm - 1px) {
-            list-style: none;
-            width: initial;
+        @media(max-width: $threshold-md - 1px) {
+            width: 100%;
         }
         & > li {
             width: 100%;
@@ -140,10 +136,6 @@ $move-map-in-xs: true !default;
     }
     & > ul + ul {
         bottom: 0;
-        @media(max-width: $threshold-sm - 1px) {
-            float: right;
-            position: relative;
-        }
     }
 }
 

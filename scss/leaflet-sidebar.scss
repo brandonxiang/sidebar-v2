@@ -23,7 +23,7 @@ $tab-active-bg: #0074d9 !default;
     }
 }
 
-@media(max-width: $threshold-sm) {
+@media(max-width: $threshold-sm - 1px) {
     .sidebar {
         top: initial;
         height: 60%;
