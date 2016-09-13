@@ -50,6 +50,9 @@
       position: absolute; } }
   .sidebar-left .sidebar-tabs {
     left: 0; }
+    @media (max-width: 768px) {
+      .sidebar-left .sidebar-tabs {
+        width: 100%; } }
   .sidebar-right .sidebar-tabs {
     right: 0; }
   .sidebar-tabs,
@@ -61,7 +64,8 @@
     @media (max-width: 991px) {
       .sidebar-tabs,
       .sidebar-tabs > ul {
-        width: 100%; } }
+        list-style: none;
+        width: initial; } }
     .sidebar-tabs > li,
     .sidebar-tabs > ul > li {
       width: 100%;
@@ -104,6 +108,10 @@
           top: initial; } }
   .sidebar-tabs > ul + ul {
     bottom: 0; }
+    @media (max-width: 768px) {
+      .sidebar-tabs > ul + ul {
+        float: right;
+        position: relative; } }
 
 .sidebar-content {
   position: absolute;

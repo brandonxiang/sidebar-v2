@@ -72,6 +72,9 @@ $move-map-in-xs: true !default;
     }
     .sidebar-left & {
         left: 0;
+        @media(max-width: $threshold-sm) {
+            width: 100%;
+        }
     }
     .sidebar-right & {
         right: 0;
@@ -84,7 +87,8 @@ $move-map-in-xs: true !default;
         margin: 0;
         padding: 0;
         @media(max-width: $threshold-md - 1px) {
-            width: 100%;
+            list-style: none;
+            width: initial;
         }
         & > li {
             width: 100%;
@@ -136,6 +140,10 @@ $move-map-in-xs: true !default;
     }
     & > ul + ul {
         bottom: 0;
+        @media(max-width: $threshold-sm) {
+            float: right;
+            position: relative;
+        }
     }
 }
 
